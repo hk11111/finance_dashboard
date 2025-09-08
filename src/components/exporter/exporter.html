@@ -1,0 +1,6 @@
+<template>
+  <h3>Export / Import Data</h3>
+  <button click.trigger="export()">Export to JSON</button>
+  <input type="file" accept="application/json" change.trigger="handleFile($event)">
+  <button click.trigger="import()" disabled.bind="!file">Import JSON</button>
+</template>

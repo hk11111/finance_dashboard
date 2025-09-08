@@ -1,0 +1,11 @@
+<template>
+  <h3>Import Transactions</h3>
+  <select value.bind="source">
+    <option value="hapoalim">Bank Hapoalim</option>
+    <option value="postal">Postal Bank</option>
+    <option value="cal">Cal Credit Card</option>
+    <option value="isracard">Isracard Credit Card</option>
+  </select>
+  <input type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" change.trigger="handleFile($event)">
+  <button click.trigger="import()" disabled.bind="!file">Import</button>
+</template>

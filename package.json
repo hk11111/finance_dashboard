@@ -1,0 +1,25 @@
+{
+  "name": "home-financial-dashboard",
+  "version": "1.0.0",
+  "description": "Home Financial Dashboard built with Aurelia, ag-grid, and Chart.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "echo 'No tests specified' && exit 0"
+  },
+  "dependencies": {
+    "aurelia": "^2.0.0",
+    "ag-grid-community": "^31.0.0",
+    "ag-grid-aurelia": "^31.0.0",
+    "chart.js": "^4.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-loader": "^9.5.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.0",
+    "html-webpack-plugin": "^5.5.0"
+  }
+}
